@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(to bottom, #F5648D, #ffff); 
+    font-family: 'Montserrat', sans-serif; 
+    margin: 0; 
+    padding: 0;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    background-color: #104A7C;
+  }
+  
+  
+  #navbarbg {
+    background-color: #104A7C;
+    border: 1px;
+    border-color: #162f45;
+    border-style: solid;
+  }
+  
+  #abovenav {
+    background-color: #ffbee8;
+  }
+  
+  .navbar a {
+    color: #7fcaff;
+    font-family: "peckham-press", sans-serif;
+font-weight: 700;
+font-style: normal;
+  }
+  #abovenav {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #abovenav img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* adjust this to control thinness */
+    object-fit: cover;
+    display: block;
+  }
+
+  .h1{
+    color: #7fcaff;
+    font-family: "peckham-press", sans-serif;
+font-weight: 700;
+font-style: normal;
+  }
+
