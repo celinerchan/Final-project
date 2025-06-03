@@ -10,6 +10,13 @@
     <link rel="stylesheet" href="https://use.typekit.net/lgc2vdy.css">
 </head>
 <body>
+<!--learned this overlay box thing from w3-->
+    <div id="overlay">
+        <div id="overlay-content">
+          <h1>Welcome</h1>
+          <button onclick="hideOverlay()">Continue</button>
+        </div>
+      </div>
     <div id="abovenav">
         <img src="images/nav2.jpg" alt="Banner">
       </div>
@@ -20,7 +27,7 @@
               <li class="nav-item"><a class="nav-link" href="extra.html" >Extracurriculars</a></li>
               <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
               <li class="nav-item"><a class="nav-link" href="gallery.html" >Gallery</a></li>
-              <li class="nav-item"><a class="nav-link" href="socials.html" >Socials</a></li>
+              <li class="nav-item"><a class="nav-link" href="socials.html" >Contact</a></li>
           </ul>
       </div>
   </nav>
@@ -36,7 +43,12 @@
             </p>
         </div>
 </head>
-<body>
-   
+
+<script>
+    function hideOverlay() {
+      const overlay = document.getElementById("overlay");
+      overlay.style.display = "none";
+    }
+    </script>
 </body>
 </html>
