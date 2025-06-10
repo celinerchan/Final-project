@@ -1,0 +1,128 @@
+.navbar {
+    background-color: #104A7C;
+  }
+  
+  
+  #navbarbg {
+    background-color: #104A7C;
+    border: 1px;
+    border-color: #162f45;
+    border-style: solid;
+  }
+  
+  #abovenav {
+    background-color: #ffbee8;
+  }
+  
+  .navbar a {
+    color: #7fcaff;
+    font-family: "peckham-press", sans-serif;
+font-weight: 700;
+font-style: normal;
+  }
+  #abovenav {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #abovenav img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; 
+    object-fit: cover;
+    display: block;
+  }
+  body {
+    background-color: #2c2c2c;
+    color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .banner {
+    background: linear-gradient(to right, #a8d7ff, #f5648d, #ccf564);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: "peckham-press", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  h1 {
+    font-family: "peckham-press", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+  p {font-family: "darkmode-mono-off", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+  
+  .navbar a {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    transform: rotate(5deg) scale(1.05);
+    box-shadow: 0 0 10px #7fcaff, 0 0 20px #f72781;
+  }
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin: 20px;
+    gap: 20px;
+  }
+  
+  .left-column {
+    flex: 1 1 40%;
+  }
+  
+  .right-column {
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+  
+  .right-column iframe {
+    flex: 1 1 300px;
+    max-width: 300px;
+    border: none;
+  }
+
+  .gallery {
+    column-count: 3;   /* Number of columns — adjust as needed */
+    column-gap: 20px;  /* Spacing between columns */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .card {
+    background-color: #162f45;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s;
+  }
+  
+  .card img:hover {
+    transform: scale(1.05);
+  }
+  

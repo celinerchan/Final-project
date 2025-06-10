@@ -1,5 +1,5 @@
 body {
-    background: linear-gradient(to bottom, #F5648D, #ffff); 
+    background: linear-gradient(to right, #a8d7ff, #F5648D, #ccf564 ); 
     font-family: 'Montserrat', sans-serif; 
     margin: 0; 
     padding: 0;
@@ -46,6 +46,7 @@ font-style: normal;
     font-family: "peckham-press", sans-serif;
     font-weight: 700;
     font-style: normal;
+    color: black;
   }
 
   p {font-family: "darkmode-mono-off", sans-serif;
@@ -97,10 +98,51 @@ font-style: normal;
     font-weight: 600;
     transition: background-color 0.3s;
   }
-  
+  .overlay-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #f72781;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: "peckham-press", sans-serif;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.overlay-button:hover {
+  background-color: #81f727;
+  color: rgb(0, 0, 0);
+}
   #overlay button:hover {
     background-color: #f72781;
     color: white;
   }
 
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 20px;
+    gap: 40px;
+  }
+  
+  .text-section {
+    max-width: 400px;
+    color: white
+    
+  }
+  .text-section {
+    padding-left: 10px;    
+    margin-top: 100px;      
+  }
+  
+  
+  .image-section img {
+    max-width: 500px;
+    height: auto;
+    display: block;
+    box-shadow: none;
+  }
   

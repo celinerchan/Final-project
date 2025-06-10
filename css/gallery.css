@@ -1,93 +1,208 @@
-     /*learned css relating to the gallery through w3schools */
-     .slideshow-container {
-        max-width: 1000px;
-        position: relative;
-        animation-name: fade;
-        animation-duration: 2s;
-        border-radius: 25px;
-        margin-top: 25px;
-        margin-left: auto;
-        margin-right: auto;
-        }
+/*learned css relating to the gallery through w3schools */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  animation-name: fade;
+  animation-duration: 2s;
+  border-radius: 25px;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  }
 
-        .mySlides {
-        display: none;
-        }
+  .mySlides {
+  display: none;
+  }
 
-        .prev, .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        margin-top: -22px;
-        padding: 16px;
-        color: white;
-        font-weight: bold;
-        font-size: 18px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        }
+  .prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  }
 
-        .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-        }
+.next {
+right: 0;
+border-radius: 3px 0 0 3px;
+}
 
-        .prev:hover, .next:hover {
-        background-color: rgba(0,0,0,0.8);
-        }
-        .text {
-            color: #f2f2f2;
-            font-size: 40px;
-            padding: 8px 12px;
-            position: absolute;
-            bottom: 8px;
-            width: 100%;
-            text-align: center;
-            }
-    
-            .numbertext {
-            color: #f2f2f2;
-            font-size: 12px;
-            padding: 8px 12px;
-            position: absolute;
-            top: 0;
-            }
-    
-            .dot {
-            cursor: pointer;
-            height: 15px;
-            width: 15px;
-            margin: 0 2px;
-            background-color: #bbb;
-            border-radius: 50%;
-            display: inline-block;
-            transition: background-color 0.6s ease;
-            }
-    
-            .container-fluid {
-                animation-name: fade2;
-                animation-duration: 2s;
-            }
-    
-            #dotsdiv {
-                animation-name: fade;
-                animation-duration: 2s;
-            }
-            .mySlides {
-                display: none;
-              }
-              
-              .active {
-                background-color: rgb(253, 255, 139)
-              }
-              .slideshow-container img {
-                width: 300px;        
-                height: 500px;       
-                object-fit: cover;   
-                border-radius: 25px; 
-                display: block;
-                margin: 0 auto;     
-              }
-    
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+.text {
+    color: #f2f2f2;
+    font-size: 40px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    }
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+.dot {
+cursor: pointer;
+height: 15px;
+width: 15px;
+margin: 0 2px;
+background-color: #bbb;
+border-radius: 50%;
+display: inline-block;
+transition: background-color 0.6s ease;
+}
+
+.container-fluid {
+  animation-name: fade2;
+  animation-duration: 2s;
+}
+
+#dotsdiv {
+  animation-name: fade;
+  animation-duration: 2s;
+}
+.mySlides {
+  display: none;
+}
+
+.active {
+  background-color: rgb(253, 255, 139)
+}
+.slideshow-container img {
+  width: 300px;        
+  height: 500px;       
+  object-fit: cover;   
+  border-radius: 25px; 
+  display: block;
+  margin: 0 auto;     
+}
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+  align-items: start;  /* allows natural height growth */
+}
+.gallery-item {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;  
+  display: block;
+}
+/*body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #a8d7ff, #f5648d, #ccf564);
+}*/
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+}
+.banner {
+  background: linear-gradient(to right, #a8d7ff, #f5648d, #ccf564);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  font-family: "peckham-press", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.navbar {
+  background-color: #104A7C;
+}
+
+
+#navbarbg {
+  background-color: #104A7C;
+  border: 1px;
+  border-color: #162f45;
+  border-style: solid;
+}
+
+#abovenav {
+  background-color: #ffbee8;
+}
+
+.navbar a {
+  color: #7fcaff;
+  font-family: "peckham-press", sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+#abovenav {
+  margin: 0;
+  padding: 0;
+}
+
+#abovenav img {
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* adjust this to control thinness */
+  object-fit: cover;
+  display: block;
+}
+
+h1 {
+  font-family: "peckham-press", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: black;
+}
+
+p {font-family: "darkmode-mono-off", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.navbar a {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar a:hover {
+  transform: rotate(5deg) scale(1.05);
+  box-shadow: 0 0 10px #7fcaff, 0 0 20px #f72781;
+}
