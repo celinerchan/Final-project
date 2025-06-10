@@ -1,0 +1,24 @@
+.banner {
+    background: linear-gradient(to right, #a8d7ff, #f5648d, #ccf564);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    font-family: "peckham-press", sans-serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .spin-hippo {
+    animation: spin 5s linear infinite;
+    transform-origin: center center;
+  }
+  
